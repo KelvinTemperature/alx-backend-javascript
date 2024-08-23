@@ -19,10 +19,11 @@ async function readDatabase(path) {
       }
       acc[field].push(firstname);
       return acc;
-    }, {});
-  } catch (error) {
-    return Promise.reject(error);
-  }
-}
+      }, {});
+    } 
+    catch (error) {
+      return Promise.reject(error);
+    };
+};
 
 module.exports = readDatabase;
