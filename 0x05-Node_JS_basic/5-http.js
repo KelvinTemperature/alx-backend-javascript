@@ -25,13 +25,13 @@ const app = http.createServer(async (req, res) => {
         res.end('Internal Server Error');
       });
   } else { // For all other endpoints not implemented, let's return 404
-        res.statusCode = 404;
-        res.end('Not Found');
-      }
+      res.statusCode = 404;
+      res.end('Not Found');
+    }
 });
 
 app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-  });
-  
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
 module.exports = app;

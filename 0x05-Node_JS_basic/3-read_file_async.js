@@ -10,6 +10,6 @@ async function countStudents(path) {
 
   console.log(getStudentsInfo(studentsData, 'CS'));
   console.log(getStudentsInfo(studentsData, 'SWE'));
-}
+};
 
 module.exports = countStudents;
